@@ -1,2 +1,2 @@
 # Prueba-Algo1
-aber
+Repositorio donde voy a guardar los ejercicios de Algoritmos 1.
