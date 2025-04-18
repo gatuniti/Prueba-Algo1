@@ -13,7 +13,6 @@ public class SumaNumerosPares {
         int resultado = 0;
 
         if(numero>0){
-            int aux = 2;
             for (int i = 2; i <= numero; i+=2){
                 resultado += i;
             }
