@@ -1,5 +1,3 @@
-package Introduccion.src;
-
 public class Main {
     public static void main(String[] args) {
         //Pruebas del ejercicio: Constructores de libro

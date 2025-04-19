@@ -1,6 +1,4 @@
 //Ejercicio: Clases y métodos
-package Introduccion.src;
-
 public class Rectangulo {
     private double largo;
     private double ancho;

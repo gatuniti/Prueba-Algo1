@@ -1,6 +1,4 @@
 //Ejercicio Tabla de multiplicar
-package Introduccion.src;
-
 import java.util.Scanner;
 
 public class TablaMultiplicar {

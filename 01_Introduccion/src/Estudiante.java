@@ -1,7 +1,5 @@
 //Ejercicio: Crear una clase y un objeto
 //Ejercicio: Clase y objeto con miembros estáticos
-package Introduccion.src;
-
 public class Estudiante {
     //Variables estáticas
     private static int estudiantesTotales = 0;

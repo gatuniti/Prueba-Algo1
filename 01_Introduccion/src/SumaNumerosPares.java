@@ -1,6 +1,4 @@
 //Ejercicio Suma de número pares
-package Introduccion.src;
-
 import java.util.Scanner;
 
 public class SumaNumerosPares {

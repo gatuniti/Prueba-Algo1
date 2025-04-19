@@ -1,5 +1,4 @@
 //Ejercicio Conversión de temperatura
-package Introduccion.src;
 import java.util.Scanner;
 
 public class ConvertorTemperatura {

@@ -1,6 +1,4 @@
 //Ejercicio: Constructores de libro
-package Introduccion.src;
-
 import java.time.LocalDate;
 
 public class Libro {

@@ -1,6 +1,4 @@
 //Ejercicio Calculadora simple
-package Introduccion.src;
-
 import java.util.Scanner;
 
 public class Calculadora {
@@ -15,24 +13,24 @@ public class Calculadora {
         double numero2 = scanner.nextDouble();
 
         double resultado;
-        switch (operador){
+        switch (operador) {
             case '+':
-                resultado = numero1+numero2;
+                resultado = numero1 + numero2;
                 System.out.println("Resultado: " + resultado);
                 break;
             case '-':
-                resultado = numero1-numero2;
+                resultado = numero1 - numero2;
                 System.out.println("Resultado: " + resultado);
                 break;
             case '*':
-                resultado = numero1*numero2;
+                resultado = numero1 * numero2;
                 System.out.println("Resultado: " + resultado);
                 break;
             case '/':
-                if(numero2==0){
+                if (numero2 == 0) {
                     System.out.println("Error: No es posible dividir por 0.");
-                }else{
-                    resultado = numero1/numero2;
+                } else {
+                    resultado = numero1 / numero2;
                     System.out.println("Resultado: " + resultado);
                 }
                 break;

@@ -1,6 +1,4 @@
 //Ejercicio Contador de palabras especial
-package Introduccion.src;
-
 import java.util.Scanner;
 
 public class ContadorPalabras {
