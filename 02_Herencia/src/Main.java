@@ -46,7 +46,7 @@ public class Main {
             vehiculo.acelerar((int)8.8);
             if(vehiculo instanceof Auto) {
                 Auto auto = (Auto) vehiculo;
-                auto.subirVentanas();         // Método exclusivo de Auto
+                auto.subirVentanas();
             }
         }
     }
