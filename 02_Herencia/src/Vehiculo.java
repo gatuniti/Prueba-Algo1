@@ -1,4 +1,5 @@
 //Ejercicio Alquilando vehiculos
+//Ejercicio Corregir el ClassCastException
 public class Vehiculo {
     private String marca;
     private String modelo;
@@ -12,5 +13,9 @@ public class Vehiculo {
 
     public double calcularCostoAlquiler(int dias){
         return precioBase*dias;
+    }
+
+    void acelerar(int aceleracion) {
+        System.out.println("Vehiculo acelerando a " + aceleracion + "Km/Hs");
     }
 }
