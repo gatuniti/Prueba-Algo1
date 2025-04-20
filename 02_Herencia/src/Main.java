@@ -18,5 +18,21 @@ public class Main {
 //                + " días es de: " + auto.calcularCostoAlquiler(dias));
 //        System.out.println("El costo de alquiler de la moto por " + dias
 //                + " días es de: " + moto.calcularCostoAlquiler(dias));
+        //Ejercicio Tipos de viajes
+//        Viaje viaje1 = new ViajeDiesel("Estacion1", "Estacion2", 120, 5, 10, 300);
+//        Viaje viaje2 = new ViajeElectrico("Estacion1", "Estacion2", 120, 5, 10, 300);
+//        Viaje viaje3 = new ViajeAltaVelocidad("Estacion1", "Estacion2", 120, 5, 10, 300);
+//        System.out.println("La demora del viaje diesel es de " + viaje1.tiempoDeDemora() + " minutos");
+//        System.out.println("La demora del viaje eléctrico es de " + viaje2.tiempoDeDemora() + " minutos");
+//        System.out.println("La demora del viaje alta velocidad es de " + viaje3.tiempoDeDemora() + " minutos");
+//        TipoDeViaje diesel = new ViajeDiesel();
+//        TipoDeViaje electrico = new ViajeElectrico();
+//        TipoDeViaje altaVelocidad = new ViajeAltaVelocidad();
+//        Viaje viaje1 = new Viaje("Estacion1", "Estacion2", 120, 5, 10, 300, diesel);
+//        Viaje viaje2 = new Viaje("Estacion1", "Estacion2", 120, 5, 10, 300, electrico);
+//        Viaje viaje3 = new Viaje("Estacion1", "Estacion2", 120, 5, 10, 300, altaVelocidad);
+//        System.out.println("La demora del viaje diesel es de " + viaje1.tiempoDeDemora() + " minutos");
+//        System.out.println("La demora del viaje eléctrico es de " + viaje2.tiempoDeDemora() + " minutos");
+//        System.out.println("La demora del viaje alta velocidad es de " + viaje3.tiempoDeDemora() + " minutos");
     }
 }
