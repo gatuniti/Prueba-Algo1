@@ -38,16 +38,16 @@ public class Main {
 //        System.out.println("La demora del viaje alta velocidad es de " + viaje3.tiempoDeDemora() + " minutos");
 
         //Ejercicio Corregir el ClassCastException
-        Vehiculo[] vehiculos = new Vehiculo[2];
-        vehiculos[0] = new Moto("Harley", "Bonita", 500);      // Upcasting implícito
-        vehiculos[1] = new Auto("Tesla", "CyberTruck", 500);      // Upcasting implícito
-
-        for (Vehiculo vehiculo : vehiculos) {
-            vehiculo.acelerar((int)8.8);
-            if(vehiculo instanceof Auto) {
-                Auto auto = (Auto) vehiculo;
-                auto.subirVentanas();
-            }
-        }
+//        Vehiculo[] vehiculos = new Vehiculo[2];
+//        vehiculos[0] = new Moto("Harley", "Bonita", 500);      // Upcasting implícito
+//        vehiculos[1] = new Auto("Tesla", "CyberTruck", 500);      // Upcasting implícito
+//
+//        for (Vehiculo vehiculo : vehiculos) {
+//            vehiculo.acelerar((int)8.8);
+//            if(vehiculo instanceof Auto) {
+//                Auto auto = (Auto) vehiculo;
+//                auto.subirVentanas();
+//            }
+//        }
     }
 }
