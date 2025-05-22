@@ -1,6 +1,4 @@
 //Ejercicio: Arreglo de inmutables
-package IgualdadOrdenCopia;
-
 public class Persona {
     private final String nombre;
     private final String apellido;

@@ -1,6 +1,4 @@
 //Ejercicio: Comparación de Estudiantes
-package IgualdadOrdenCopia;
-
 public class EstudianteGrado extends IgualdadOrdenCopia.Estudiante {
     private final String carreraGrado;
 

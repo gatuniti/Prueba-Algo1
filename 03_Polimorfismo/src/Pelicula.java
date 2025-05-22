@@ -1,6 +1,4 @@
 //Ejercicio "Biblioteca de medios"
-package Polimorfismo;
-
 public class Pelicula extends Medio{
     private String director;
 

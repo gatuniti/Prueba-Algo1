@@ -1,6 +1,4 @@
 //Ejercicio: Arreglo de inmutables
-package IgualdadOrdenCopia;
-
 import java.time.LocalDate;
 
 public class Documento {

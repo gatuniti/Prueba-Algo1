@@ -1,6 +1,4 @@
 //Ejercicio "Biblioteca de medios"
-package Polimorfismo;
-
 public class Libro extends Medio{
     private String autor;
 

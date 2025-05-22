@@ -1,6 +1,4 @@
 //Ejercicio "Calculadora":
-package Polimorfismo;
-
 public class CalculadoraAvanzada {
     public int sumar(int a, int b){
         return a+b;
