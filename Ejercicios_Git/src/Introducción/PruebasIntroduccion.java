@@ -1,4 +1,4 @@
-public class Main {
+public class PruebasIntroduccion {
     public static void main(String[] args) {
         //Pruebas del ejercicio: Constructores de libro
 //        Libro emily = new Libro("Emily the Strange", "Emily Strange");

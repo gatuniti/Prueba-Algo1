@@ -1,6 +1,6 @@
 //Ejercicio: Crear una clase y un objeto
 //Ejercicio: Clase y objeto con miembros estáticos
-public class Estudiante {
+public class EstudianteIntro {
     //Variables estáticas
     private static int estudiantesTotales = 0;
     //Variables de instancia
@@ -18,7 +18,7 @@ public class Estudiante {
 //    }
 
     //Constructor
-    public Estudiante(String nombre, int edad){
+    public EstudianteIntro(String nombre, int edad){
         this.nombre = nombre;
         this.edad = edad;
     }
@@ -35,9 +35,9 @@ public class Estudiante {
 
     //Aumenta el numero de estudiantes totales en 1 y
     //retorna un estudiante con el nombre y edad dados
-    public static Estudiante agregarEstudiante(String nombre, int edad){
+    public static EstudianteIntro agregarEstudiante(String nombre, int edad){
         estudiantesTotales ++;
-        return new Estudiante(nombre, edad);
+        return new EstudianteIntro(nombre, edad);
     }
 
 //    public String toString(){

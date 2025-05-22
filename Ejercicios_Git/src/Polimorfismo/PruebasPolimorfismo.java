@@ -1,6 +1,6 @@
 package Polimorfismo;
 
-public class Main {
+public class PruebasPolimorfismo {
     public static void main(String[] args) {
         //Pruebas ejercicio "Biblioteca de medios":
 //        Libro libro = new Libro("El Gran Gatsby", "F. Scott Fitzgerald");
