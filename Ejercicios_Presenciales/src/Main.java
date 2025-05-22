@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         //Clase: 21/3/25
@@ -14,6 +12,7 @@ public class Main {
 //        System.out.println(pepa2.getNombre());
 //        System.out.println(pepa2.getDNI());
 //        System.out.println(pepa.getNombre());
+
 
         //Clase: 1/4/25
 //        Marcador marcador1 = new Marcador("rojo");
