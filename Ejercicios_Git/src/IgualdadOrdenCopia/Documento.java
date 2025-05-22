@@ -5,8 +5,8 @@ import java.time.LocalDate;
 
 public class Documento {
     private final int numeroDoc;
-    private final LocalDate fechaEmicion;
-    private final LocalDate fechaVencimiento;
+    private LocalDate fechaEmicion;
+    private LocalDate fechaVencimiento;
 
     public Documento(int numeroDoc){
         this.numeroDoc = numeroDoc;
@@ -18,7 +18,13 @@ public class Documento {
         return new Documento(numeroDoc);
     }
 
-    public int getNumeroDoc() {
-        return numeroDoc;
+    @Override
+    public String toString(){
+        return "DNI: " + numeroDoc + " Fecha de emición: " + fechaEmicion + " Fecha de vencimiento: " + fechaVencimiento;
+    }
+
+    public void setFechas(LocalDate nuevaFecha){
+        this.fechaEmicion = nuevaFecha;
+        this.fechaVencimiento = nuevaFecha.plusYears(10);
     }
 }

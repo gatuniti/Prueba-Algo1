@@ -12,8 +12,12 @@ public class Persona {
         this.documento = documento;
     }
 
+    public Documento getDocumento() {
+        return this.documento;
+    }
+
     @Override
     public String toString() {
-        return "Nombre: " + nombre + " Apellido: " + apellido + " DNI: " + documento.getNumeroDoc();
+        return "Nombre: " + nombre + " Apellido: " + apellido + " DNI: " + documento;
     }
 }
