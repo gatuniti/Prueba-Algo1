@@ -1,9 +1,9 @@
 //Ejercicio: Clases y métodos
-public class RectanguloIntro {
+public class Rectangulo {
     private double largo;
     private double ancho;
 
-    public RectanguloIntro(double largo, double ancho){
+    public Rectangulo(double largo, double ancho){
         this.largo = largo;
         this.ancho = ancho;
     }

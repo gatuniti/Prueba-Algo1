@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Ejercicios_Git" target="22" />
+      <module name="Ejercicios_Git.main" target="22" />
+      <module name="Ejercicios_Git.test" target="22" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
