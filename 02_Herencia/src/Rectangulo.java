@@ -1,9 +1,9 @@
 //Ejercicio Figuras geométricas
-public class RectanguloHer extends Figura{
+public class Rectangulo extends Figura{
     private double base;
     private double altura;
 
-    public RectanguloHer(double base, double altura){
+    public Rectangulo(double base, double altura){
         super("Rectangulo");
         this.base = base;
         this.altura = altura;
