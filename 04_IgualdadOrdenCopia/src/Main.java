@@ -1,15 +1,65 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+package IgualdadOrdenCopia;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        //Pruebas del ejercicio: Arreglo de inmutables
+//        Persona valentina = new Persona("Valentina", "Di Iorio",
+//                new Documento(43038738));
+//        Persona pepe = new Persona("Pepe", "Pipo",
+//                new Documento(36024815));
+//        Persona maria = new Persona("Maria", "Pipo",
+//                new Documento(45369789));
+//        Persona juan = new Persona("Juan", "Pipo",
+//                new Documento(30456843));
+//        Persona carlos = new Persona("Carlos", "Pipo",
+//                new Documento(32458713));
+//        Persona[] listaPersonas = {valentina, pepe, maria, juan, carlos};
+//
+//        for (Persona persona : listaPersonas){
+//            System.out.println(persona);
+//        }
+//
+//        carlos.getDocumento().renovarDocumento();
+//        juan.getDocumento().setFechas(LocalDate.now().plusDays(1));
+//
+//        for (Persona persona : listaPersonas){
+//            System.out.println(persona);
+//        }
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        //Pruebas del ejercicio: Comparación de Estudiantes
+//        EstudianteGrado valen = new EstudianteGrado("Valentina", "Lic. Ciencia de Datos", 22, 1313);
+//        EstudianteGrado pepe = new EstudianteGrado("pepe", "Lic. Ciencia de Datos", 86, 568);
+//
+//        EstudiantePosgrado valen2 = new EstudiantePosgrado("Valentina", "Lic. Ciencia de Datos", 22, 1313);
+//        EstudiantePosgrado pepe2 = new EstudiantePosgrado("Valentina", "Lic. Ciencia de Datos", 22, 1313);
+//
+//        Estudiante valen3 = new Estudiante("Valentina", 22, 1313);
+//        Estudiante pepe3 = new Estudiante("pepe", 86, 1313);
+//
+//        if(valen.equals(valen2)){
+//            System.out.println("valen y valen2 son iguales");
+//        }else{
+//            System.out.println("valen y valen2 no son iguales");
+//        }
+//        if(valen.equals(pepe)){
+//            System.out.println("valen y pepe son iguales");
+//        }else{
+//            System.out.println("valen y pepe no son iguales");
+//        }
+//        if(valen2.equals(pepe2)){
+//            System.out.println("valen2 y pepe2 son iguales");
+//        }else{
+//            System.out.println("valen2 y pepe2 no son iguales");
+//        }
+//        if(valen3.equals(pepe3)){
+//            System.out.println("valen3 y pepe3 son iguales");
+//        }else{
+//            System.out.println("valen3 y pepe3 no son iguales");
+//        }
+//        if(valen2 == pepe2){
+//            System.out.println("valen2 y pepe2 son iguales");
+//        }else{
+//            System.out.println("valen2 y pepe2 no son iguales");
+//        }
     }
 }

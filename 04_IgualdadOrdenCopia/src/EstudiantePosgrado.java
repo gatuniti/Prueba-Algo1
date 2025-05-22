@@ -1,7 +1,7 @@
 //Ejercicio: Comparación de Estudiantes
 package IgualdadOrdenCopia;
 
-public class EstudiantePosgrado extends EstudianteIg{
+public class EstudiantePosgrado extends IgualdadOrdenCopia.Estudiante {
     private final String carreraPosgrado;
 
     public EstudiantePosgrado(String nombre, String carreraPosgrado, int edad, int matricula){

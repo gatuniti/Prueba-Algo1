@@ -1,12 +1,12 @@
 //Ejercicio: Comparación de Estudiantes
 package IgualdadOrdenCopia;
 
-public class EstudianteIg {
+public class Estudiante {
     protected final String nombre;
     protected final int edad;
     protected final int matricula;
 
-    public EstudianteIg(String nombre, int edad, int matricula){
+    public Estudiante(String nombre, int edad, int matricula){
         this.nombre = nombre;
         this.edad = edad;
         this.matricula = matricula;
@@ -29,10 +29,10 @@ public class EstudianteIg {
         if(this == otro){
             return true;
         }
-        if(!(otro instanceof EstudianteIg)){
+        if(!(otro instanceof IgualdadOrdenCopia.Estudiante)){
             return false;
         }
-        EstudianteIg otroAux = (EstudianteIg) otro;
+        IgualdadOrdenCopia.Estudiante otroAux = (IgualdadOrdenCopia.Estudiante) otro;
         return this.getNombre() == otroAux.getNombre() &&
                 this.getEdad() == otroAux.getEdad();
     }
