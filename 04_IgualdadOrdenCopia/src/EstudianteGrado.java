@@ -1,5 +1,5 @@
 //Ejercicio: Comparación de Estudiantes
-public class EstudianteGrado extends IgualdadOrdenCopia.Estudiante {
+public class EstudianteGrado extends Estudiante {
     private final String carreraGrado;
 
     public EstudianteGrado(String nombre, String carreraGrado, int edad, int matricula){
