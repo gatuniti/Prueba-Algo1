@@ -59,5 +59,25 @@ public class Main {
 //        }else{
 //            System.out.println("valen2 y pepe2 no son iguales");
 //        }
+
+        //Pruebas ejercicio: Copia profunda sin Cloneable
+
+        Persona valen = new Persona("Valentina", "Di Iorio", 22,
+                new Documento(43038738));
+        Persona valen2 = new Persona(valen);
+        Persona valen3 = Persona.copiaProfunda(valen);
+
+        System.out.println(valen);
+        System.out.println(valen2);
+        System.out.println(valen3);
+
+        valen.setEdad(23);
+        valen.getDocumento().setNumero(33333333);
+
+        System.out.println(valen);
+        System.out.println(valen2);
+        System.out.println(valen3);
+
+
     }
 }
