@@ -14,15 +14,23 @@ public class Torneo {
     private Map<String, Equipo> equiposParticipantes;
     private List<Partido> partidosJugados;
 
-    //Constructor con lista vacía
     public Torneo(){
         equiposParticipantes = new HashMap<>();
         partidosJugados = new ArrayList<>();
     }
 
     public void cargarEquipo(String nombre, int hinchas) {
-        Equipo equipoNuevo = new Equipo(nombre, hinchas);
-        equiposParticipantes.put(nombre, equipoNuevo);
+        try {
+            if(equiposParticipantes.containsKey(nombre)){
+                throw new RuntimeException("El equipo que trata cargar ya forma parte de torneo.");
+            }
+            Equipo equipoNuevo = new Equipo(nombre, hinchas);
+            equiposParticipantes.put(nombre, equipoNuevo);
+        }catch (RuntimeException exception){
+            System.out.println("Error: " + exception);
+            System.out.println("Detalle: El equipo es " + nombre);
+        }
+
     }
 
     public void cargarPartido(String local, String visitante, LocalDate fecha, int golesLocal, int golesVisitante) {
@@ -34,27 +42,35 @@ public class Torneo {
     }
 
     public void mostrarPartidosFecha(LocalDate fecha) {
-        for(Partido partido : partidosJugados){
-            if(partido.getFecha().isEqual(fecha)){
-                System.out.println(partido);
+        if(partidosJugados.isEmpty()){
+            System.out.println("No se jugaron partidos en la fecha: " + fecha);
+        }else{
+            for(Partido partido : partidosJugados){
+                if(partido.getFecha().isEqual(fecha)){
+                    System.out.println(partido);
+                }
             }
         }
     }
 
     public void mostrarTabla() {
-        List<Equipo> listaEquipos = new ArrayList<>();
-        for(Equipo equipo : equiposParticipantes.values()){
-            listaEquipos.add(equipo);
-        }
-        Ordenador.quickSort(listaEquipos);
+        if(equiposParticipantes.isEmpty()){
+            System.out.println("Actualmente no hay equipos participando en el torneo, no se puede mostrar una tabla.");
+        }else{
+            List<Equipo> listaEquipos = new ArrayList<>();
+            for(Equipo equipo : equiposParticipantes.values()){
+                listaEquipos.add(equipo);
+            }
+            Ordenador.quickSort(listaEquipos);
 
-        System.out.println("Equipo | Ju | Pu | Ga | Em | Pe | GF | GC | DG");
-        for(Equipo equipo : listaEquipos){
-            System.out.println(equipo + " |  " + equipo.calcularPartidosJugados() +
-                    " |  " + equipo.getPuntos() + " |  " + equipo.getPartidosGanados() +
-                    " |  " + equipo.getPartidosEmpatados() + " |  " + equipo.getPartidosPerdidos() +
-                    " |  " + equipo.getGolesConvertidos() + " |  " + equipo.getGolesRecibidos() +
-                    " | " + equipo.calcularDiferenciaGoles());
+            System.out.println("Equipo | Ju | Pu | Ga | Em | Pe | GF | GC | DG");
+            for(Equipo equipo : listaEquipos){
+                System.out.println(equipo + " |  " + equipo.calcularPartidosJugados() +
+                        " |  " + equipo.getPuntos() + " |  " + equipo.getPartidosGanados() +
+                        " |  " + equipo.getPartidosEmpatados() + " |  " + equipo.getPartidosPerdidos() +
+                        " |  " + equipo.getGolesConvertidos() + " |  " + equipo.getGolesRecibidos() +
+                        " | " + equipo.calcularDiferenciaGoles());
+            }
         }
     }
 

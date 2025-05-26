@@ -99,4 +99,8 @@ public class Equipo implements Comparable<Equipo>{
     public int getGolesRecibidos() {
         return golesRecibidos;
     }
+
+    public void actualizarHinchada(int hinchasNuevos){
+        this.hinchas = hinchasNuevos;
+    }
 }
