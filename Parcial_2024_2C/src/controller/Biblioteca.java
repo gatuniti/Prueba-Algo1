@@ -16,13 +16,13 @@ public class Biblioteca {
     private final String nombre;
     private Map<Integer, Usuario> usuarios;
     private List<Libro> libros;
-    private Map<Integer, Prestamo> prestamos;
+    private List<Prestamo> prestamos;
 
     public Biblioteca(String nombre){
         this.nombre = nombre;
         usuarios = new HashMap<>();
         libros = new ArrayList<>();
-        prestamos = new HashMap<>();
+        prestamos = new ArrayList<>();
     }
 
     public boolean registrarUsuario(Usuario usuario){
@@ -84,9 +84,8 @@ public class Biblioteca {
                 throw new LibroNoDisponibleException();
             }
 
-            int id = prestamos.size();
-            Prestamo prestamoNuevo = new Prestamo(id, usuario, libro);
-            prestamos.put(id, prestamoNuevo);
+            Prestamo prestamoNuevo = new Prestamo(usuario, libro);
+            prestamos.add(prestamoNuevo);
 
             usuario.nuevoPrestamo();
             libro.sePresto();
@@ -123,13 +122,13 @@ public class Biblioteca {
     }
 
     public void mostrarPrestamos() {
-        for(Prestamo prestamo : prestamos.values()){
+        for(Prestamo prestamo : prestamos){
             System.out.println(prestamo);
         }
     }
 
     public void mostrarPrestamosActivos() {
-        for(Prestamo prestamo : prestamos.values()){
+        for(Prestamo prestamo : prestamos){
             if(prestamo.getEstado() == EstadoPrestamo.PENDIENTE){
                 System.out.println(prestamo);
             }

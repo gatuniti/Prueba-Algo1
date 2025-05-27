@@ -3,6 +3,8 @@ package entity;
 import java.time.LocalDate;
 
 public class Prestamo {
+    private static int contador = 0;
+
     private final int id;
     private final LocalDate fechaSolicitud;
     private LocalDate fechaDevolucion;
@@ -10,8 +12,9 @@ public class Prestamo {
     private final Usuario usuario;
     private final Libro libro;
 
-    public Prestamo(int id, Usuario usuario, Libro libro){
-        this.id = id;
+    public Prestamo(Usuario usuario, Libro libro){
+        id = contador;
+        contador++;
         this.usuario = usuario;
         this.libro = libro;
         fechaSolicitud = LocalDate.now();
